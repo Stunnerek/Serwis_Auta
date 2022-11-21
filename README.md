@@ -1,2 +1,4 @@
 # Serwis_Auta
-Olaf Karas Karol Becker Kamil Janowski Dawid Leśniewski
+Za prace odpowiedzialny jest skład:Olaf Karas Karol Becker Kamil Janowski Dawid Leśniewski
+
+Link do trello:https://trello.com/b/g66O4PFN/strona-og%C5%82oszeniowa-samochod
