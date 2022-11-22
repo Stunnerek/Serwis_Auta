@@ -65,7 +65,7 @@ $sql = "SELECT id FROM users WHERE username = ?";
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <title>logowanie</title>
+    <title>Rejestracja</title>
 </head>
 <body>
         <h2>Rejestracja</h2>
