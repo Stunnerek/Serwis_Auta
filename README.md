@@ -1,5 +1,5 @@
 # Serwis_Auta
-Praca Przedstawia Prostą stronę zawierająca Oferty Aut. Można na niej się zarejestrować, zalogować, dodać ofertę oraz przejrzeć wszystkie oferty.
+Praca Przedstawia Prostą stronę zawierająca Oferty Aut. Można na niej się zarejestrować, zalogować, dodać ofertę oraz przejrzeć wszystkie oferty aut.
 Za prace odpowiedzialny jest skład:
 
 Olaf Karas-Częściowy CSS
