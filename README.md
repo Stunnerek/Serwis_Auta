@@ -3,8 +3,11 @@ Praca Przedstawia Prostą stronę zawierająca Oferty Aut. Można na niej się z
 Za prace odpowiedzialny jest skład:
 
 Olaf Karas-Częściowy CSS
+
 (Lider) Karol Becker-PHP, Baza danych oraz elementy HTML 
+
 Kamil Janowski-HTML,Częściowy CSS
+
 Dawid Leśniewski-Częściowy HTML, Projekty Graficzne Stron 
 
 Link do trello:https://trello.com/b/g66O4PFN/strona-og%C5%82oszeniowa-samochod
