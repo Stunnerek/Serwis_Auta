@@ -9,7 +9,7 @@ Dawid Leśniewski-Częściowy HTML, Projekty Graficzne Stron
 
 Link do trello:https://trello.com/b/g66O4PFN/strona-og%C5%82oszeniowa-samochod
 
-English
+English:
 This project shows basic car website containing cars offers. You can register, login, add offer or check other available offers.
 For this project resposible are:
 Olaf Karas-partial CSS
