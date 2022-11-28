@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color:  #4C5053;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+}
+header #baner{
+    height: 100%;
+    width: 100px;
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #838A8F;
+    height: 79vh;
+}
+#profil{
+    margin-top: 12%;
+    height: 210px;
+}
+#profil form{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    height: 11vh;
+    background: #4C5053;
+}
+textarea {
+    max-width: 700px;
+    background-color: #CAD4DB;
+    border: 0px solid black;
+  }
+  input {
+    background-color: #CAD4DB;
+    border: 2px solid #4C5053;
+  }
+  select {
+    background-color: #CAD4DB ;
+    border: 0px solid black;
+  }
+  option {
+    background-color: #CAD4DB;
+    border: 0px solid black;
+  }
+  a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
