@@ -2,7 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: 0.2s;
 }
+.p ,.op{
+    display:none;
+}
+
 header{
     width: 100%;
     height: 10vh;
@@ -12,6 +17,11 @@ header{
     align-items: center;
     padding: 2vh;
     color:black;
+}
+#container{
+    display: inline-block;
+    width: 30%;
+    height: 80vh;
 }
 header #baner{
     height: 100%;
@@ -26,21 +36,12 @@ header #baner{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#lewygorny{
-width: 30%;
-height: 40vh;
-float: left;
-background-color: #A7AFB5;
-}
-#lewygorny input{
-border-radius: 10px;
-height: 4vh;
-width: 80%;
-margin: 15px;
+.wynik:last-child{
+    margin-bottom: 10px;
 }
 #lewydolny{
-    width: 30%;
-    height: 40vh;
+    width: 100%;
+    height: 100%;
     background-color: #A7AFB5;
     float: left;
     padding: 15px;
@@ -59,27 +60,37 @@ margin: 15px;
     width: 70%;
     height: 80vh;
     float: right;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 .wynik{
-    width: 300px;
+    width: 70%;
     height: 200px;
     border-radius: 5px;
+    margin: auto;
     border: 1px solid black;
-    margin: 25px 0px 0px 25px;
-    display: inline-block;
-}
-.wynik p {
+    margin-top: 10px;
+    padding: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+.wynik input{
+    width: 100px;
+    height: 45px;
+    background: rgb(220, 217, 223);
+    border-radius: 5px;
+    text-align: center;
+}
+
 .zdjecie{
     width: 250px;
     height: 120px;
     border: 1px solid black;
-    margin: 25px 0px 0px 25px; ;
+    background-image: url(auto.png);
+    background-size: cover;
+    background-position: center;
 }
-#głowny::-webkit-scrollbar {
+
+*::-webkit-scrollbar{
     display: none;
 }
 footer{
@@ -87,13 +98,14 @@ footer{
     float: left;
     width: 100%;
     height: 10vh;
+    margin-top:-6px;
 }
 textarea {
     max-width: 700px;
     background-color: #CAD4DB;
     border: 0px solid black;
   }
-  input {
+  #lewygorny input {
     background-color: #CAD4DB;
     border: 2px solid #4C5053;
   }
@@ -105,33 +117,52 @@ textarea {
     background-color: #CAD4DB;
     border: 0px solid black;
   }
-  
+  .infog{
+    width:100%;
+    float:right;
+    text-align: center;
+  }
+  .op{
+    width: 100%;
+    float:right;    
+    text-align: center;
+  }
 @media screen and (max-width: 768px) 
-{
+{   
+    #container{
+        width: 100%;
+        height: 250px;
+    }
     #lewygorny {
         width: 100%;
         height: 40px;
-        float: left;
-        position: relative;
     }
     footer{
         display: none;
     }
     #lewydolny {
         width: 100%;
-        height: 500px;
+        height: 210px;
         float: left;
+        display: flex;
+        justify-content: center;
     } 
     #głowny {
         width: 100%;
-        height: 600px;
-        position: absolute;top: 320px;
+        height: 555px;
+        margin-top:-6px;
+        display: flexbox;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .wynik{
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
     }
     #lewygorny input{
         width: 100%;
         margin: 0px;
-    }
-    .wynik{
-        margin: 25px 0px 0px 75px;
     }
 }

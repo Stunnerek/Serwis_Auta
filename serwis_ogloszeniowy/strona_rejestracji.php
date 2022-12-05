@@ -1,10 +1,8 @@
 <?php
 require_once "config.php";
-error_reporting(0);
-
 // Definicja zmieniych i nadanie im pustych wartosci
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$username = $confirm_password = "";
+$password = "";
  
 $sql = "SELECT id FROM users WHERE username = ?";
         
@@ -28,8 +26,6 @@ $sql = "SELECT id FROM users WHERE username = ?";
             } else{
                 echo "nie udalo sie nazwiazac polaczenia";
             }
-
-            mysqli_stmt_close($stmt);
         }
     
     // sprawdzanie hasla
@@ -39,19 +35,18 @@ $sql = "SELECT id FROM users WHERE username = ?";
         $password = trim($_POST["password"]);
     }
           
-        // kwerenda na insertowanie danych do tabeli
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-         
-        if($stmt = mysqli_prepare($link, $sql)){
+// kwerenda na insertowanie danych do tabeli
+$sql2 = "INSERT INTO 'users' (username, 'password') VALUES (?, ?)";      
+        if($stmt1 = mysqli_prepare($link, $sql2)){
             // przypisanie wartosci parametrow do pusych zmiennych
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-            
-            // parametry
-            $param_username = $username;
+
+            $param_username = trim($_POST["username"]);
             $param_password = password_hash($password, PASSWORD_DEFAULT); // hashowanie hasla
             
+            
             // logowanie
-            if(mysqli_stmt_execute($stmt)){
+            if(mysqli_stmt_execute($stmt1)){
                 // przekierowanie do strony jesli udalo sie zalogowac
                 header("location: strona_logowania.php");
             } else{

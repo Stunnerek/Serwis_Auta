@@ -8,7 +8,6 @@
     <title>Profil uzytkownika</title>
     <?php
             require_once "config.php";  
-            error_reporting(0);
             if(isset($_POST['wyloguj'])) {
                 session_destroy();
                 header("Refresh:0");
@@ -29,7 +28,14 @@
                     echo $username;
                 ?>
             </h1>
-            <h2>Dołączono: <?php while ($row = $dol->fetch_assoc()) {echo $row['created_at'];} ?>
+            <h2>Dołączono: 
+                <?php
+                $sql =  "SELECT created_at FROM users WHERE username = $username;";
+                $dol = mysqli_query($link, $sql);
+                while ($row = $dol->fetch_assoc()) {
+                    echo $row['created_at'];
+                } 
+                ?>
             </h2><br>
         <form method="post">
             <a href="formaut.php"><input type="button" value="Dodaj ogloszenie"></a>
